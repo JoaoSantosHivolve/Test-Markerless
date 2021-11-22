@@ -9,7 +9,8 @@ if ( $detect->isMobile() ) {
 }
  
 // Any tablet device.
-if( $detect->isTablet() ){
+if( $detect->isTablet() )
+{
  
 }
  
@@ -18,14 +19,14 @@ if( $detect->isMobile() && !$detect->isTablet() ){
  
 }
  
-// Check for a specific platform with the help of the magic methods:
 if( $detect->isiOS() )
 {
-    header( 'Location: http://www.yoursite.com/new_page.html' );
+    header( 'Location: https://joaosantoshivolve.github.io/Test-Markerless/builds/android/android_index.html' );
 }
  
-if( $detect->isAndroidOS() ){
- 
+if( $detect->isAndroidOS() )
+{
+    header( 'Location: https://joaosantoshivolve.github.io/Test-Markerless/builds/android/android_index.html' );
 }
  
 // Alternative method is() for checking specific properties.
