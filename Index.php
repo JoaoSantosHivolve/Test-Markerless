@@ -21,13 +21,15 @@ if( $detect->isMobile() && !$detect->isTablet() ){
  
 if( $detect->isiOS() )
 {
+    
     header( 'Location: https://joaosantoshivolve.github.io/Test-Markerless/builds/android/android_index.html' );
     die();
 }
  
 if( $detect->isAndroidOS() )
 {
-    header( 'Location: https://joaosantoshivolve.github.io/Test-Markerless/builds/android/android_index.html' );
+    include 'https://joaosantoshivolve.github.io/Test-Markerless/builds/android/android_index.html';
+    //header( 'Location: https://joaosantoshivolve.github.io/Test-Markerless/builds/android/android_index.html' );
     die();
 }
  
